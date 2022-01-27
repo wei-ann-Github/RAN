@@ -1,0 +1,16 @@
+name: ran
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - click
+  - jupyter
+  - jedi
+  - ipykernel
+  - dill
+  - pytest
+  - pip
+  - dill
+  - nb_conda
+  - pip:
+    - jupyternotify

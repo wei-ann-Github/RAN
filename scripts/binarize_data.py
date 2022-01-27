@@ -6,7 +6,10 @@ import os
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
+ROOT = Path(__file__).parent.parent
+sys.path.insert(0, str(ROOT))
+sys.path.append(str(ROOT / 'code_RAN'))
+sys.path.append(str(ROOT / 'code_RAN/Lunas'))
 
 from thseq.data.vocabulary import Vocabulary
 from thseq.data.datasets import write_binary_1darray
